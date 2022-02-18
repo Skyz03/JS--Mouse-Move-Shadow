@@ -28,6 +28,9 @@ function shadow(e) {
   const xWalk = Math.round((x / width * walk) - (walk / 2));
   const yWalk = Math.round((y / height * walk) - (walk / 2));
 
+  // After having the round numbers 
+  // box-shadow : 1px 1px 0 color  = x y blur status color
+
   text.style.textShadow = `
       ${xWalk}px ${yWalk}px 0 rgba(255,0,255,0.7),
       ${xWalk * -1}px ${yWalk}px 0 rgba(0,255,255,0.7),
